@@ -220,7 +220,6 @@ input:checked + .slider:before {
     border-top: 2px solid;
 }
 
-
 /* landing css */
 
 .landingImg {

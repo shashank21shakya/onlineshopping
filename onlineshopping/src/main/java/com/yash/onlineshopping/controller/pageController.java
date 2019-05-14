@@ -8,25 +8,17 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class pageController {
 
-	@RequestMapping(value = { "/", "/home", "/index" })
+	@RequestMapping(value = { "/", "/home" })
 	public ModelAndView index() {
 
 		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("greeting", "Welcome to web mvc");
+		
+		mv.addObject("title", "Home");
+		mv.addObject("userClickHome", true);
 
 		return mv;
 
 	}
 
-	@RequestMapping(value = {"/test/{greeting}"})
-	public ModelAndView test(@PathVariable(value ="greeting",required=false) String greeting) {
-		if(greeting == null) {
-			greeting ="Hellow there";
-		}
-		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("greeting", greeting);
-		return mv;
-		
-		
-	}
+	
 }

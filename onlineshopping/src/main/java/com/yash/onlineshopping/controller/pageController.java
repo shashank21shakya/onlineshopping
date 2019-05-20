@@ -14,6 +14,7 @@ public class pageController {
 		
 		mv.addObject("title", "Home");
 		mv.addObject("userClickHome", true);
+		System.out.println("sjajs");
 
 		return mv;
 

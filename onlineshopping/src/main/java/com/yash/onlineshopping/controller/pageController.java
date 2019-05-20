@@ -11,6 +11,7 @@ public class pageController {
 	@RequestMapping(value = { "/", "/home" })
 	public ModelAndView index() {
 
+	System.Out.Println("for git clone test ");
 		ModelAndView mv = new ModelAndView("page");
 		
 		mv.addObject("title", "Home");

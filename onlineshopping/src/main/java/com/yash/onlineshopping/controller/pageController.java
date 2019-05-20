@@ -16,6 +16,7 @@ public class pageController {
 		
 		mv.addObject("title", "Home");
 		mv.addObject("userClickHome", true);
+		System.Out.Println("for git clone test time 2 ");
 
 		return mv;
 

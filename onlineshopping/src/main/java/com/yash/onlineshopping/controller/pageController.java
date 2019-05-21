@@ -18,6 +18,7 @@ public class pageController {
 		mv.addObject("userClickHome", true);
 		System.Out.Println("for git clone test time 2 ");
 
+		System.Out.Println("for git clone test time 2 ");
 		return mv;
 
 	}
